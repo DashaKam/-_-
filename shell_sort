@@ -1,0 +1,70 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+#include <math.h>
+
+void shellSort (int a[], int s)               
+{
+	int st, i=0, j, tmp;
+	for (st = s / 2; st > 0; st /= 2){
+	   		for (i = st; i < s; i++) {
+		   			for (j = i - st; a[j] > a[j + st] && j >= 0; j -= st)
+			{
+				tmp = a[j];
+				a[j] = a[j + st];
+				a[j + st] = tmp;
+			}
+      }
+}
+}
+
+int main(){
+    FILE* finput = fopen("input.txt", "r");
+    FILE* foutput = fopen("output.txt", "w");
+   int size = 0, N = 0, nd = 0, x = 0, l = 0, k = 0, tmp = 0;
+    double start = 0;
+    fscanf(finput, "%d", &size);
+   
+    for(int i = 0; i < size; i++){
+        fscanf(finput, "%d", &N);
+       
+        for(int j = 0; j < N; j++){
+            fscanf(finput, "%d", &a[j]);
+        }
+        for(int j = 0; j < N; j++){
+            fprintf(foutput, "%d ", a[j]);
+        }
+        fprintf(foutput, "\n");
+       
+        ???start
+        while(1){
+            if(l % 2 == 0){
+            int p, h;
+            p=pow(2,i);
+            h=pow(2,i/2);
+                x = 9 * p - 9 * h + 1;
+            }
+            else{
+            int p, g;
+            p=pow(2,i);
+            h=pow(2, (i+1)/2);
+                x = 8 * p - 6 * h + 1;
+            }
+            if(x * 3 >= N) {
+                break;
+                }
+            }
+
+        start = 1000 * (getTime() - start);
+        for(int j = 0; j < n; j++){
+            fprintf(fout, "%d ", arr[j]);
+        }
+        fprintf(fout, "\n");
+        fprintf(fout, "%lf\n-\n", start);
+    }
+    free(arr);
+    free(arrd);
+    fclose(fin);
+    fclose(fout);
+    return 0;
+}
