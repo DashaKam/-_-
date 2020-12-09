@@ -2,8 +2,7 @@
 #include <stdlib.h>
 void heap_breaking(int *n, int a, int b)
 {
-    int max;
-    int d = 0;
+    int max, d = 0;
 
     while ((a * 2 <= b) && (!d))
     {
@@ -53,7 +52,7 @@ int main()
     int* array = malloc(sizeof(int));
     for(int i = 0; i < N; i++)
     {
-        fscanf(F, "%d", h);
+        fscanf(F, "%d", &h);
         free(array);
         array = malloc(sizeof(int) * h);
         for(int j = 0; j < h; j++)
