@@ -40,7 +40,7 @@ void quick_sort(int * a, int x, int y){
             x--;
     }
     quick_sort(a,c,x);
-    quick_sort(a,y,n);
+    quick_sort(a,y,b);
 }
 
     int main()
@@ -53,7 +53,7 @@ void quick_sort(int * a, int x, int y){
         int* array = malloc(sizeof(int));
         for(int i = 0; i < N; i++)
         {
-            fscanf(F, "%d", h);
+            fscanf(F, "%d", &h);
             free(array);
             array = malloc(sizeof(int) * h);
             for(int j = 0; j < h; j++)
