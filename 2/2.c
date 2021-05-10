@@ -66,8 +66,6 @@ int main(int argc, char * argv[]) {
             fprintf(file_2, "%d", 0);
         }
 
-
-
     fclose(file_1);
     fclose(file_2);
     return 0;
