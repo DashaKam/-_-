@@ -29,19 +29,19 @@ int f (int v[],int nv,int n_of_v,int  l,int m,int m_v_1,int m_v_2,int g[][3],int
 }
 
 
-int main(int a, char *v[]) {
+int main(int argc, char *argv[]) {
     FILE * file_1;
     FILE * file_2;
     if (file_1 == NULL) {
         return -1;
     }
-    if (a == 2) {
-        file_1 = fopen(v[1], "r");
+    if (argc == 2) {
+        file_1 = fopen(argv[1], "r");
         file_2 = fopen("output.txt", "w");
     }
-    else if (a >= 3) {
-            file_1 = fopen(v[1], "r");
-            file_2 = fopen(v[2], "w");
+    else if (argc >= 3) {
+            file_1 = fopen(argv[1], "r");
+            file_2 = fopen(argv[2], "w");
         }
 
     else
